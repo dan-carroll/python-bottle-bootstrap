@@ -1,10 +1,18 @@
 import bottle
 from bottle import route, default_app, template, static_file
 
+#from bottle import Bottle, template
+
 bottle.TEMPLATE_PATH.insert(0,'/home/DanCarroll/bottle/views')
 
 app = default_app()
 #BaseTemplate.defaults['get_url'] = app.get_url  # reference to function, not function call!
+
+site = {'name': 'Bottle app with Bootstrap',
+        'author': 'Dan Carroll',
+        'lang': 'en-US',
+        'description': 'No Description'
+        }
 
 # Static Routes
 #@get("/static/css/<filepath:re:.*\.css>")
@@ -29,10 +37,11 @@ def serve_static(filename):
 
 @route('/')
 def index():
+    """Home page"""
 
-    info = {'title': 'Welcome Home!',
-            'content': 'My Bottle (Python) web app.'
+    page = {'title': 'Welcome Home!',
+            'content': 'Hello World',
+            'banner': 'No Show'
             }
 
-    return template('index', info)
-
+    return template('default', page, site)
