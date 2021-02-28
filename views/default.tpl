@@ -5,7 +5,10 @@
 
   <body>
 
+% include('navbar.tpl')
+
 % include('header.tpl')
+
 % if banner == 'show':
 	% include('banner.tpl')
 % end

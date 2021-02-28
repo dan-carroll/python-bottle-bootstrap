@@ -14,10 +14,16 @@ site = {'name': 'Bottle app with Bootstrap',
         'description': 'No Description'
         }
 
+
 # Static Routes
 #@get("/static/css/<filepath:re:.*\.css>")
 #def css(filepath):
 #    return static_file(filepath, root="static/css")
+
+# Static CSS Files
+#@route('/static/css/<filename:re:.*\.css>')
+#def send_css(filename):
+#    return static_file(filename, root='static/css')
 
 #@get("/static/font/<filepath:re:.*\.(eot|otf|svg|ttf|woff|woff2?)>")
 #def font(filepath):
@@ -31,17 +37,17 @@ site = {'name': 'Bottle app with Bootstrap',
 #def js(filepath):
 #    return static_file(filepath, root="static/js")
 
-@route('/static/<filename:path>', name='static')
-def serve_static(filename):
-    return static_file(filename, root='/home/DanCarroll/bottle/static')
+@route('/static/<filepath:path>', name='static')
+def serve_static(filepath):
+    return static_file(filepath, root='/home/DanCarroll/bottle/static')
 
 @route('/')
 def index():
     """Home page"""
 
-    page = {'title': 'Welcome Home!',
-            'content': 'Hello World',
+    page = {'title': "Dan Carroll's Python with Bottle and Bootstrap Page",
+            'content': 'Hello Everyone',
             'banner': 'No Show'
             }
 
-    return template('default', page, site)
+    return template('landing', page, site)

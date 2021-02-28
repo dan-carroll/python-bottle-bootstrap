@@ -1,3 +1,4 @@
+<!-- footer section -->
 	<footer class="py-5">
 	  <hr>
 	  <div class="container text-center text-info">
@@ -34,3 +35,4 @@
 </script>
 
 <!-- Place all other Javascript code below -->
+<script type="text/javascript" src='/static/js/main.js'></script>
