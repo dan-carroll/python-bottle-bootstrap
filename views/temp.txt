@@ -1,0 +1,58 @@
+                          <li><strong>{{key}}: </strong>
+                          % if isinstance(value, str):
+                            {{value}}
+                          % elif isinstance(value, bytes):
+                            {{value}}
+                          % elif isinstance(value, bool):
+                            {{'*'}}{{value}}{{'*'}}
+                          % else:
+                            {{'Not a String '}}
+                            % res = type(value)
+                            {{res}}
+                          % end
+                          </li>
+                        % end
+
+
+                          % elif sub == 'wsgi':
+                            {{'Not a String '}}{{WSGI}}
+
+
+bottle.app
+bottle.request
+bottle.route
+
+          % if nav['active'] == 'active':
+          aria-current="page" \\
+          % end
+
+          <a class="nav-link {{nav['active']}}" \\
+          href="{{nav['href']}}">{{nav['text']}}</a>
+
+        % for nav in navs:
+        <li class="nav-item">
+          <a class="nav-link active" \\
+          href="/">Home</a>
+        </li>
+        % end
+
+{{navhome}}
+
+    navs = [ {'href': "/", 'active': "active", 'text': "Home"},
+            {'href': "#about-us", 'active': "", 'text': "About Us"},
+            {'href': "#projects", 'active': "", 'text': "Projects"},
+            {'href': "#contact", 'active': "", 'text': "Contact"},
+            {'href': "/pages", 'active': "", 'text': "Pages"} ]
+
+
+        % if page == "pages":
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Test Pages
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/pages/navbarpg.html">Navbar Test</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+          </ul>
+        </li>
+        % end

@@ -1,71 +1,47 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE>
+<html lang="{{ lang or 'en-US' }}">
+  <head>
+    % include('head.tpl')
+  </head>
+  <body>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{title}}</title>
+<header>
+  % include('navbar.tpl')
+</header>
 
-<!-- Compiled and Minified Bootstrap CSS -->
-<link rel = "stylesheet"
-   href = "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-   integrity = "sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-   crossorigin = "anonymous">
+<main>
 
-<link rel="stylesheet" type="text/css" href="/static/css/main.css">
+<!-- Hero section -->
+<section id="hero">
+  <div class="container mt-5 pt-5 mt-lg-0 pt-lg-0">
+    <div class="row">
+      <div class="col">
+        <h1>Software Development
+        <small class="text-muted">Is My Jam!</small></h1>
+        <p>Software creation is a blast. It is so interesting and satisfying to create apps that solve problems. Everything from full enterprise workflow automation to single purpose utilities and full websites to individual landing pages or online apps to mobile apps. Being challenged is the spice of life.</p>
+        <p>This site is about the Python programming language and what you can accomplish with it. And some of what I have worked on. Python allows you to do so much, such as web design, application development, game programming, scientific endeavors, and so much more. Plus it's really fun and easy to learn.</p>
+            <a href="https://dancarroll.pythonanywhere.com/start" class="btn btn-primary" style="width:15rem;margin:.5rem auto;">Get Started with Python</a>
+            <a href="https://dancarroll.pythonanywhere.com/web-python" class="btn btn-primary" style="width:15rem;margin:.5rem auto;">Python in the Web Browser</a>
+            <a href="https://dancarroll.pythonanywhere.com/projects" class="btn btn-primary" style="width:15rem;margin:.5rem auto;">Check out my Python Projects</a>
+            <a href="https://dancarroll.pythonanywhere.com/pages" class="btn btn-primary" style="width:15rem;margin:.5rem auto;">My Experimental Pages</a>
+      </div>
+      <div class="col img-col">
+        <img src="/static/images/app-development.png" class="img-fluid" alt="Software Development">
+      </div>
+    </div>
 
-</head>
-
-<body>
-<nav class="navbar navbar-expand-md">
-  <a class="navbar-brand" href="#">Logo</a>
-  <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="main-navigation">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="#">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">About</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Contact</a>
-      </li>
-    </ul>
   </div>
-</nav>
-    <div class = "container-fluid">
-    <div class = "row">
-        <div class = "col">
-        <h1>{{title}}</h1>
-        <p>{{content}}</p>
-        </div>
-    </div>
-    </div>
+</section>
+<!-- End Hero section -->
 
-<!-- Javascript libraries are below -->
-<!-- jQuery Library -->
-<script src = "https://code.jquery.com/jquery-3.2.1.slim.min.js"
-   integrity = "sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-   crossorigin = "anonymous">
-</script>
+</main>
 
-<!-- Popper -->
-<script src = "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-   integrity = "sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-   crossorigin = "anonymous">
-</script>
+% include('footer.tpl')
 
-<!-- Compiled and Minified Bootstrap JavaScript -->
-<script src = "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-   integrity = "sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-   crossorigin = "anonymous">
-</script>
+% include('scripts.tpl')
 
-<!-- Place all other Javascript code below -->
+    <!-- Place all other Javascript code below -->
+    <!-- <script type="text/javascript" src='/static/js/main.js'></script> -->
 
-</body>
-
+  </body>
 </html>

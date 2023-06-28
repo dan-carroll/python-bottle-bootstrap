@@ -1,38 +1,35 @@
-<!-- footer section -->
-	<footer class="py-5">
-	  <hr>
-	  <div class="container text-center text-info">
-		<div class="row">
-		  <div class="col">
-			All content copyrighted by Dan Carroll &copy;2021.
-		  </div>
-		</div>
-		<div class="row">
-		  <div class="col">
-			All rights reserved.
-		  </div>
-		</div>
-	  </div>
-	</footer>
-
-<!-- Javascript libraries are below -->
-<!-- jQuery Library -->
-<script src = "https://code.jquery.com/jquery-3.2.1.slim.min.js"
-   integrity = "sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-   crossorigin = "anonymous">
-</script>
-
-<!-- Popper -->
-<script src = "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-   integrity = "sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-   crossorigin = "anonymous">
-</script>
-
-<!-- Compiled and Minified Bootstrap JavaScript -->
-<script src = "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-   integrity = "sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-   crossorigin = "anonymous">
-</script>
-
-<!-- Place all other Javascript code below -->
-<script type="text/javascript" src='/static/js/main.js'></script>
+<footer id="footer">
+  <div class="container pt-2">
+    <div class="row align-items-center">
+      <div class="col">
+        <p><a href="https://dan-carroll.github.io/" title="my GitHub" style="text-decoration: none;">
+            <i class="fa fa-github icon" style="font-size: 32px; margin: 5px 10px; color: white;" alt="github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/dan-carroll-in-florida/" title="my Linked In" style="text-decoration: none;">
+            <i class="fa fa-linkedin icon" style="font-size: 32px; margin: 5px 10px; color: white;" alt="linkedin"></i>
+        </a>
+        <a href="https://twitter.com/FloriDanOnline" title="my Twitter" style="text-decoration: none;">
+            <i class="fa fa-twitter icon" style="font-size: 32px; margin: 5px 10px; color: white;" alt="twitter"></i>
+        </a>
+        <a href="https://www.facebook.com/floridan" title="my Facebook" style="text-decoration: none;">
+            <i class="fa fa-facebook icon" style="font-size: 32px; margin: 5px 10px; color: white;" alt="facebook"></i>
+        </a>
+        </p>
+        <p>
+            Created using the <a href="https://www.python.org/" title="Python programming language"
+            class="link-info ms-1"> Python programming language</a> and the <a href="https://bottlepy.org/docs/dev/"
+            title="Bottle web framework" class="link-info ms-1"> Bottle web framework</a>. Also utilizing the
+            <a href="https://getbootstrap.com/" title="Bootstrap web design framework" class="link-info ms-1">
+            Bootstrap 5 web design framework</a> and some <a href="https://fontawesome.com/" title="Font Awesome icon library"
+            class="link-info ms-1">Font Awesome icon library</a> icons.
+        </p>
+        <p>Some graphic items are: <a href="https://www.flaticon.com/free-icons/development"
+        title="development icons" class="link-info ms-1">Development icons created by Design Circle - Flaticon</a>
+        </p>
+        <p>
+            Developed and maintained by Dan Carroll &copy;2022/2023
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>

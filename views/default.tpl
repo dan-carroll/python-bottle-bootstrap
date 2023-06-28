@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="{{ lang or 'en-US' }}">
-
-% include('head.tpl')
-
+  <head>
+    % include('./landing/head.tpl')
+  </head>
   <body>
 
-% include('navbar.tpl')
+% include('./landing/navbar.tpl')
 
-% include('header.tpl')
+% include('./landing/header.tpl')
 
 % if banner == 'show':
-	% include('banner.tpl')
+	% include('./landing/banner.tpl')
 % end
 
     <div class = "container-fluid">
@@ -22,7 +22,7 @@
     </div>
     </div>
 
-% include('footer.tpl')
+% include('./landing/footer.tpl')
 
   </body>
 </html>

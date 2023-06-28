@@ -18,23 +18,24 @@
           href="{{nav['href']}}">{{nav['text']}}</a>
         </li>
         % end
+
       </ul>
     </div>
   </div>
 </nav>
 
-% if 'crumbs' in locals():
-<nav aria-label="breadcrumb" class=" text-black p-2" style="margin: 7.5rem 0 0 7rem;">
+% if crumbs:
+<nav aria-label="breadcrumb">
   <ol class="breadcrumb">
   % for crumb in crumbs:
-    % if crumb['active'] == 'active':
-    <li class="breadcrumb-item active" aria-current="page">{{crumb['text']}}</li>
+    % if ['active'] == 'active':
+    <li class="breadcrumb-item">
+      <a href="{{crumb['href']}}">{{crumb['text']}}</a></li>
     % else:
-    <li class="breadcrumb-item"><a href="{{crumb['href']}}">{{crumb['text']}}</a></li>
+    <li class="breadcrumb-item active" aria-current="page">{{crumb['text']}}</li>
     % end
   % end
   </ol>
 </nav>
 % end
-
 <!-- End Navbar -->

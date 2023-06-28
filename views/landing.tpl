@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="{{ lang or 'en-US' }}">
 
-% include('head.tpl')
+% include('./landing/head.tpl')
 
   <body>
 
-% include('navbar.tpl')
+% include('./landing/navbar.tpl')
 
-% include('header.tpl')
+% include('./landing/header.tpl')
 
-% include('about.tpl')
+% include('./landing/portfolio.tpl')
 
-% include('portfolio.tpl')
+% include('./landing/about.tpl')
 
-% include('footer.tpl')
+% include('./landing/footer.tpl')
 
   </body>
 </html>
